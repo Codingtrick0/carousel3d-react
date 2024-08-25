@@ -1,0 +1,54 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Carousel } from "react-carousel3";
+import { useParams } from "react-router-dom";
+ ///////////npm i react-carousel3/////////////!!!!!
+
+const App = () => {
+  const style = {
+    width: "29px",
+    height: "29px",
+  };
+
+
+
+  
+    return ( <>
+
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      background: "black",
+    }}
+  >
+ ///////////npm i react-carousel3/////////////!!!!!
+
+    <Carousel  height={460} width={780} yOrigin={62} yRadius={48} autoPlay={true}>
+      <div key={1} style={style}>
+        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE3gFLBPkxghaqKGke8GDTU0je1retX-OK9FiJeq3iId4wyDg__YSTkBWXkvsqUP_7Big&usqp=CAU" />
+      </div>
+      <div key={2} style={style}>
+        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNBiWltBJE4NBh_tbTL0Md652G_UPfjtoZ1TgfJrC5jgLvcOLafJtbeltrx8TxUNmBSU&usqp=CAU" />
+      </div>
+      <div key={3} style={style}>
+        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMimP1aGxqljqnmYlyENwMV5rrCDaDJ_VXHK-0LWoGRoq_UTZ0n6DChd4w2dWUeEpDRB4&usqp=CAU" />
+      </div>
+      <div key={4} style={style}>
+        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOSlm0EoVL_rCyFarpmB_ODFbwTQeOhS2uTcYJ0Gv_SOZCWMSuZI0pgJr3-NTWrpDQMw&usqp=CAU" />
+      </div>
+      <div key={5} style={style}>
+        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBWkCxtH27VoqhV3LgBaxR1ywKzDQvqto4jifBZiUOoimcAJpBUbG09eTwp4s7QqM_F8&usqp=CAU" />
+      </div>
+     
+    </Carousel>
+  </div>
+
+ ///////////npm i react-carousel3/////////////!!!!!
+
+
+
+    </> );
+}
+ 
+export default App;
